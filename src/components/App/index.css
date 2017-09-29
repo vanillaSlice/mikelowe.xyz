@@ -1,0 +1,15 @@
+.App {
+  height: 100%;
+  display: grid;
+  grid-template-columns: auto;
+  grid-template-rows: auto 1fr;
+  grid-template-areas: 'navbar' 'content';
+}
+
+@media (min-width: 62em) {
+  .App {
+    grid-template-columns: auto 1fr;
+    grid-template-rows: auto;
+    grid-template-areas: 'navbar content';
+  }
+}

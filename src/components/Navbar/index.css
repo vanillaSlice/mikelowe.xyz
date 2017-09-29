@@ -5,7 +5,7 @@
   justify-content: center;
   align-items: flex-start;
   align-content: flex-start;
-  width: 100%;
+  width: 15.625rem;
   background-color: #2c2d31;
   color: white;
   text-align: center;
@@ -52,6 +52,7 @@
   width: 100%;
   padding: 15px;
   position: relative;
+  transition: all 0.1s linear;
 }
 
 .navbar a {
@@ -59,19 +60,26 @@
   color: white;
 }
 
-.navbar li.active{
-  background-color: #04b9b7;
+.navbar li.active,
+.navbar li:hover {
+  background-color: #008684;
 }
 
-.navbar li.active .arrow {
+.navbar .arrow {
   position: absolute;
   top: 0;
   right: 0;
   width: 0; 
-  height: 0; 
+  height: 0;
   border-top: 24px solid #2c2d31;
   border-bottom: 24px solid #2c2d31;
-  border-left: 24px solid #04b9b7;
+  border-left: 24px solid #2c2d31;
+  transition: all .1s linear;
+}
+
+.navbar li:hover .arrow,
+.navbar li.active .arrow {
+  border-left: 24px solid #008684;
 }
 
 .navbar .social li {
@@ -93,5 +101,6 @@
   }
   .navbar {
     height: 100px;
+    width: 100%;
   }
 }

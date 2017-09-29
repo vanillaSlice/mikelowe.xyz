@@ -1,11 +1,3 @@
-.App {
-  height: 100%;
-  display: grid;
-  grid-template-columns: 15.625rem auto;
-  grid-template-rows: auto;
-  grid-template-areas: 'navbar content';
-}
-
 .content {
   grid-area: content;
   height: 100%;
@@ -20,8 +12,10 @@
   color: white;
   font-weight: 300;
   font-size: 54px;
-  margin: 20px 150px;
+  padding: 20px 20px;
   font-weight: bold;
+  width: 100%;
+  margin: 0 auto;
 }
 
 .welcome a {
@@ -46,11 +40,8 @@
   }
 }
 
-@media (max-width: 992px) {
-  .App {
-    grid-template-columns: auto;
-    grid-template-rows: auto 100%;
-    grid-template-areas: 'navbar'
-    'content';
+@media (min-width: 62em) {
+  .welcome {
+    padding: 20px 250px;
   }
 }
