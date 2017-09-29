@@ -1,4 +1,4 @@
-Source code for my website which can be viewed [here](https://vanillaslice.github.io/my-site/).
+Source code for my website which can be viewed [here](https://www.mikelowe.xyz/).
 
 ## Running Locally
 
