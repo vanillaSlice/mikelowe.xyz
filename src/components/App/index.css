@@ -1,3 +1,7 @@
+/*
+ * Mobile styles
+ */
+
 .App {
   height: 100%;
   display: grid;
@@ -6,6 +10,10 @@
   grid-template-areas: 'navbar' 'content';
 }
 
+/*
+ * Desktop styles
+ */
+ 
 @media (min-width: 62em) {
   .App {
     grid-template-columns: auto 1fr;
