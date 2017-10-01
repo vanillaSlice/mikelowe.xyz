@@ -18,7 +18,7 @@ const options = {
   strings: [
     '^2000Hi! ^125 My name is <a>Mike</a>.',
     'I&apos;m a software developer based in <a>Manchester</a>.',
-    'Have a look around.<br>^250Check out my <a>work</a>.<br>^250Feel free to get in <a>touch</a>.<br>^500:)&nbsp;'],
+    'Have a look around.<br>^250Check out my <a href="#/projects"><span>work</span></a>.<br>^250Feel free to get in <a href="mailto:mikelowedev@gmail.com">touch</a>.<br>^500:)&nbsp;'],
   typeSpeed: 40,
   backDelay: 1000,
   autoInsertCss: true,
