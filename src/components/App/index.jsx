@@ -6,6 +6,8 @@ import Content from '../Content/';
 
 import './index.css';
 
+const secretCode = 'ArrowUpArrowUpArrowDownArrowDownArrowLeftArrowRightArrowLeftArrowRightba';
+
 class App extends Component {
   constructor(props) {
     super(props);
@@ -13,7 +15,6 @@ class App extends Component {
     this.state = {
       showContent: false,
       pressed: [],
-      secretCode: 'ArrowUpArrowUpArrowDownArrowDownArrowLeftArrowRightArrowLeftArrowRightba',
     };
 
     this.handleTransitionEnd = this.handleTransitionEnd.bind(this);
@@ -25,13 +26,12 @@ class App extends Component {
   }
 
   handleKeyUp(event) {
+    // show nicolas cage if secret code is entered
     this.setState((prevState) => {
       let pressed = [...prevState.pressed, event.key];
-      pressed.splice(
-        -prevState.secretCode.length - 1,
-        pressed.length - prevState.secretCode.length);
+      pressed.splice(-secretCode.length - 1, pressed.length - secretCode.length);
 
-      if (pressed.join('').includes(prevState.secretCode)) {
+      if (pressed.join('').includes(secretCode)) {
         window.Cagealicious.add();
         pressed = [];
       }

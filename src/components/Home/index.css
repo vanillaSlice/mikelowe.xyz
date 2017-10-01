@@ -1,0 +1,58 @@
+/*
+ * Mobile styles
+ */
+
+.Home {
+  color: white;
+  font-size: 2.8rem;
+  padding: 1rem;
+  font-weight: bold;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.Home .message {
+  width: 100%;
+  max-width: 40rem;
+}
+
+.Home a,
+.Home strong,
+.Home .typed-cursor {
+  color: #005351;
+}
+
+.Home a {
+  text-decoration: none;
+  outline: none;
+}
+
+.Home a:hover,
+.Home a:focus {
+  text-decoration: underline;
+}
+
+.Home .typed-cursor {
+  animation: blink 1s steps(1);
+}
+
+@keyframes blink {
+  0% {
+    color: #005351;
+  }
+
+  50% {
+    color: transparent;
+  }
+}
+
+/*
+ * Medium devices
+ */
+
+@media (min-width: 48em) {
+  .Home {
+    font-size: 3.375rem;
+  }
+}

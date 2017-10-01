@@ -28,6 +28,11 @@
   background-color: #2c2d31;
 }
 
+.Navbar .header > a {
+  display: flex;
+  align-items: center;
+}
+
 .Navbar .logo {
   border-radius: 50%;
   transition: transform 0.1s linear;
@@ -135,7 +140,7 @@
   position: absolute;
   top: 0;
   right: 0;
-  width: 0; 
+  width: 0;
   height: 0;
   border-top: 1.5625rem solid #2c2d31;
   border-bottom: 1.5625rem  solid #2c2d31;
@@ -150,7 +155,7 @@
 
 .Navbar .social .icon {
   font-size: 2rem;
-  margin: 1rem 1rem 0.5rem 1rem;
+  margin: 1rem 1rem 0.5rem;
   color: #04b9b7;
   transition: all 0.1s linear;
 }
@@ -215,7 +220,7 @@
   .Navbar .menu {
     display: block !important;
   }
-  
+
   .Navbar .arrow {
     display: initial;
   }

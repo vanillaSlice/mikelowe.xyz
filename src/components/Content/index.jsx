@@ -1,42 +1,35 @@
-import React, { Component } from 'react';
+import React from 'react';
 import { Switch, Route } from 'react-router-dom';
 import PropTypes from '../../../node_modules/prop-types';
 
 import Home from '../Home/';
 import About from '../About/';
 import Projects from '../Projects/';
-import Skills from '../Skills';
+import ProjectDetail from '../Projects/ProjectDetail';
+import Skills from '../Skills/';
 
 import './index.css';
 
-class Content extends Component {
-  constructor(props) {
-    super(props);
-
-    this.state = {};
-  }
-
-  /**
-   * Add routes here
-   */
-  render() {
-    if (!this.props.show) {
-      return (
-        <div className="content" />
-      );
-    }
+const Content = (props) => {
+  // only show content when ready
+  if (!props.show) {
     return (
-      <div className="content">
-        <Switch>
-          <Route path="/about" component={About} />
-          <Route path="/projects" component={Projects} />
-          <Route path="/skills" component={Skills} />
-          <Route path="/" component={Home} />
-        </Switch>
-      </div>
+      <div className="Content" />
     );
   }
-}
+
+  return (
+    <div className="Content">
+      <Switch>
+        <Route path="/about" component={About} />
+        <Route path="/projects/:name" component={ProjectDetail} />
+        <Route path="/projects" component={Projects} />
+        <Route path="/skills" component={Skills} />
+        <Route path="/" component={Home} />
+      </Switch>
+    </div>
+  );
+};
 
 Content.propTypes = {
   show: PropTypes.bool.isRequired,

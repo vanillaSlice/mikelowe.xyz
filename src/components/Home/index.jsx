@@ -2,6 +2,8 @@ import React, { Component } from 'react';
 import Typed from 'typed.js';
 import Transition from 'react-transition-group/Transition';
 
+import './index.css';
+
 const duration = 400;
 
 const defaultStyle = {
@@ -16,12 +18,11 @@ const transitionStyles = {
 
 const options = {
   strings: [
-    '^2000Hi! ^125 My name is <a>Mike</a>.',
-    'I&apos;m a software developer based in <a>Manchester</a>.',
+    '^2000Hi! ^125 My name is <strong>Mike</strong>.',
+    'I&apos;m a software developer based in <strong>Manchester</strong>.',
     'Have a look around.<br>^250Check out my <a href="#/projects"><span>work</span></a>.<br>^250Feel free to get in <a href="mailto:mikelowedev@gmail.com">touch</a>.<br>^500:)&nbsp;'],
   typeSpeed: 40,
   backDelay: 1000,
-  autoInsertCss: true,
   backSpeed: 20,
 };
 
@@ -30,12 +31,25 @@ class Home extends Component {
     super(props);
 
     this.state = {};
+
+    this.initTyped = this.initTyped.bind(this);
+    this.destroyTyped = this.destroyTyped.bind(this);
   }
 
   componentDidMount() {
-    this.setState({
-      typed: new Typed(this.el, options),
-    });
+    this.initTyped();
+  }
+
+  componentWillUnmount() {
+    this.destroyTyped();
+  }
+
+  initTyped() {
+    this.setState({ typed: new Typed(this.typedElement, options) });
+  }
+
+  destroyTyped() {
+    this.state.typed.destroy();
   }
 
   render() {
@@ -43,13 +57,15 @@ class Home extends Component {
       <Transition appear in timeout={0}>
         {state => (
           <div
-            className="welcome"
+            className="Home"
             style={{
               ...defaultStyle,
               ...transitionStyles[state],
             }}
           >
-            <span ref={(el) => { this.el = el; }} />
+            <p className="message">
+              <span ref={(typedElement) => { this.typedElement = typedElement; }} />
+            </p>
           </div>
         )}
       </Transition>
