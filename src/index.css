@@ -3,6 +3,7 @@ html {
   overflow: hidden;
   background-color: #04b9b7;
   font-family: 'Raleway', sans-serif;
+  -webkit-font-smoothing: subpixel-antialiased;
 }
 
 body {
