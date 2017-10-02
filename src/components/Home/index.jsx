@@ -18,7 +18,7 @@ const transitionStyles = {
 
 const options = {
   strings: [
-    '^2000Hi! ^125 My name is <strong>Mike</strong>.',
+    '^2500Hi! ^125My name is <strong>Mike</strong>.',
     'I&apos;m a software developer based in <strong>Manchester</strong>.',
     'Have a look around.<br>^250Check out my <a href="#/projects"><span>work</span></a>.<br>^250Feel free to get in <a href="mailto:mikelowedev@gmail.com">touch</a>.<br>^500:)&nbsp;'],
   typeSpeed: 40,
