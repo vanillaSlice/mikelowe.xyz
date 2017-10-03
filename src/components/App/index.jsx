@@ -17,12 +17,18 @@ class App extends Component {
       pressed: [],
     };
 
-    this.handleTransitionEnd = this.handleTransitionEnd.bind(this);
     this.handleKeyUp = this.handleKeyUp.bind(this);
+    this.handleAnimationEnd = this.handleAnimationEnd.bind(this);
   }
 
   componentDidMount() {
-    document.addEventListener('keyup', this.handleKeyUp, false);
+    document.addEventListener('keyup', this.handleKeyUp);
+    this.appRef.addEventListener('animationend', this.handleAnimationEnd);
+  }
+
+  componentWillUnmount() {
+    document.removeEventListener('keyup', this.handleKeyUp);
+    this.appRef.removeEventListener('animationend', this.handleAnimationEnd);
   }
 
   handleKeyUp(event) {
@@ -40,15 +46,18 @@ class App extends Component {
     });
   }
 
-  handleTransitionEnd() {
+  handleAnimationEnd() {
     this.setState({ showContent: true });
   }
 
   render() {
     return (
       <Router>
-        <div className="App">
-          <Navbar onComplete={this.handleTransitionEnd} />
+        <div
+          className="App"
+          ref={(appRef) => { this.appRef = appRef; }}
+        >
+          <Navbar />
           <Content show={this.state.showContent} />
         </div>
       </Router>

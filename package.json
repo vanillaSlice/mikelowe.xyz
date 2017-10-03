@@ -11,7 +11,6 @@
     "react-fontawesome": "^1.6.1",
     "react-router-dom": "^4.2.2",
     "react-scripts": "1.0.13",
-    "react-transition-group": "^2.2.0",
     "typed.js": "^2.0.6"
   },
   "scripts": {
