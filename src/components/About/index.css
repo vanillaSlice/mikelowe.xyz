@@ -1,15 +1,15 @@
-/*
- * Mobile styles
- */
-
 .About {
   color: white;
   padding: 3.8rem 1rem;
-  font-weight: bold;
   display: flex;
   flex-direction: column;
   justify-content: center;
   align-items: center;
+}
+
+.About .container {
+  width: 100%;
+  max-width: 40rem;
 }
 
 .About h3 {
@@ -18,9 +18,32 @@
   margin: 0;
 }
 
-.About p {
-  max-width: 40rem;
-  font-size: 1.2rem;
-  text-align: justify;
+.About h4 {
+  font-size: 1.1875rem;
   margin-bottom: 0;
+  text-transform: uppercase;
+}
+
+.About p {
+  font-size: 1.1875rem;
+  margin: 0;
+}
+
+.About p:last-child {
+  padding-top: 1.5625rem;
+}
+
+.About a {
+  color: #005351;
+  text-decoration: none;
+  outline: none;
+}
+
+.About a:hover,
+.About a:focus {
+  text-decoration: underline;
+}
+
+.About em {
+  font-size: 0.75rem;
 }

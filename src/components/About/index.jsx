@@ -1,6 +1,8 @@
 import React from 'react';
 import Transition from 'react-transition-group/Transition';
 
+import cv from './cv.pdf';
+
 import './index.css';
 
 const duration = 400;
@@ -25,27 +27,37 @@ const About = () => (
           ...transitionStyles[state],
         }}
       >
-        <h3>About Me</h3>
-        <p>
-          Hodor hodor HODOR! Hodor hodor hodor hodor hodor! Hodor hodor - hodor; hodor hodor?
-          Hodor, hodor HODOR hodor, hodor hodor, hodor, hodor hodor. Hodor, hodor. Hodor. Hodor,
-          hodor - hodor, hodor. Hodor hodor. Hodor hodor HODOR! Hodor hodor hodor hodor, hodor,
-          hodor hodor.
-        </p>
-        <p>
-          Hodor. Hodor HODOR hodor, hodor hodor. Hodor. Hodor hodor hodor, hodor. Hodor hodor,
-          hodor. Hodor hodor?! Hodor hodor, hodor. Hodor hodor? Hodor. Hodor HODOR hodor, hodor
-          hodor. Hodor. Hodor hodor - hodor hodor HODOR hodor, hodor hodor?! Hodor hodor HODOR!
-          Hodor hodor, hodor. Hodor hodor hodor; hodor hodor. Hodor! Hodor hodor, hodor hodor?!
-          Hodor, hodor; hodor hodor, hodor. Hodor hodor hodor hodor?! Hodor. Hodor hodor... Hodor
-          hodor hodor hodor!
-        </p>
-        <p>
-          Hodor. Hodor HODOR hodor, hodor hodor. Hodor, hodor - hodor?! Hodor! Hodor hodor, hodor...
-          Hodor hodor hodor, hodor, hodor hodor. Hodor hodor - HODOR hodor, hodor hodor hodor
-          hodor... Hodor hodor hodor. Hodor. Hodor, hodor... Hodor hodor hodor - hodor, hodor,
-          hodor hodor. Hodor! Hodor hodor, hodor - hodor - hodor - hodor?
-        </p>
+        <div className="container">
+          <h3>About Me</h3>
+          <h4>Jobs</h4>
+          <p>
+            I have been a developer for <a href="https://www.jisc.ac.uk/">Jisc</a> since 2014 working
+            on <a href="https://www.jisc.ac.uk/historical-texts">Historical Texts</a> and <a href="https://www.jisc.ac.uk/journal-archives">Journal Archives</a>.
+          </p>
+          <h4>Education</h4>
+          <p>
+            I Graduated with a BSc in Computer Science from <a href="https://www.liverpool.ac.uk/">The University of Liverpool</a> in 2014.
+          </p>
+          <h4>Likes</h4>
+          <p>
+            Stephen King, My Bloody Valentine (the band of course), terrible films.
+          </p>
+          <h4>Dislikes</h4>
+          <p>
+            Anything that isn&apos;t a Krispy Kreme.
+          </p>
+          <h4>E-mail</h4>
+          <p>
+            <a href="mailto:mikelowedev@gmail.com">mikelowedev@gmail.com</a> (memes are welcome).
+          </p>
+          <h4>CV</h4>
+          <p>
+            <a href={cv}>Here</a>.
+          </p>
+          <p>
+            <em>...hmmmm I wonder if this site has a Konami code Easter egg...</em>
+          </p>
+        </div>
       </div>
     )}
   </Transition>
