@@ -15,11 +15,11 @@ const About = () => (
       </p>
       <h4>Education</h4>
       <p>
-        I Graduated with a BSc in Computer Science from <a href="https://www.liverpool.ac.uk/">The University of Liverpool</a> in 2014.
+        I Graduated with a BSc in Computer Science from The University of Liverpool in 2014.
       </p>
       <h4>Likes</h4>
       <p>
-        Stephen King, My Bloody Valentine (the band of course), terrible films.
+        Stephen King, My Bloody Valentine (the band of course), and terrible films.
       </p>
       <h4>Dislikes</h4>
       <p>
@@ -31,7 +31,7 @@ const About = () => (
       </p>
       <h4>CV</h4>
       <p>
-        <a href={cv}>Here</a>.
+        Read it <a href={cv}>here</a>.
       </p>
       <p>
         <em>...hmmmm I wonder if this site has a Konami code Easter egg...</em>
