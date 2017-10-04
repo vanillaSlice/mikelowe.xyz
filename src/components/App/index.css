@@ -1,15 +1,16 @@
 /*
- * Mobile styles
+ * Base styles
  */
 
 .App {
-  height: 100%;
+  min-height: 100vh;
   display: grid;
+  /* navbar on top, content underneath */
   grid-template: 'navbar' auto 'content' 1fr / auto;
-  animation: fade-in 0.8s ease-in-out;
+  animation: AppFadeIn 0.8s ease-in-out;
 }
 
-@keyframes fade-in {
+@keyframes AppFadeIn {
   0% {
     opacity: 0;
   }
@@ -19,12 +20,21 @@
   }
 }
 
+.App .Navbar {
+  grid-area: navbar;
+}
+
+.App .Content {
+  grid-area: content;
+}
+
 /*
- * Desktop styles
+ * Large device styles (992px)
  */
 
 @media (min-width: 62em) {
   .App {
+    /* navbar left, content right */
     grid-template: 'navbar content' auto / auto 1fr;
   }
 }

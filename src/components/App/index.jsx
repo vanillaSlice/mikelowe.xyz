@@ -1,12 +1,13 @@
 import React, { Component } from 'react';
 import { HashRouter as Router } from 'react-router-dom';
 
+import ScrollToTop from './ScrollToTop';
 import Navbar from '../Navbar/';
 import Content from '../Content/';
 
 import './index.css';
 
-const secretCode = 'ArrowUpArrowUpArrowDownArrowDownArrowLeftArrowRightArrowLeftArrowRightba';
+const SECRET_CODE = 'ArrowUpArrowUpArrowDownArrowDownArrowLeftArrowRightArrowLeftArrowRightba';
 
 class App extends Component {
   constructor(props) {
@@ -23,21 +24,23 @@ class App extends Component {
 
   componentDidMount() {
     document.addEventListener('keyup', this.handleKeyUp);
-    this.appRef.addEventListener('animationend', this.handleAnimationEnd);
+    this.appElement.addEventListener('animationend', this.handleAnimationEnd);
   }
 
   componentWillUnmount() {
     document.removeEventListener('keyup', this.handleKeyUp);
-    this.appRef.removeEventListener('animationend', this.handleAnimationEnd);
+    this.appElement.removeEventListener('animationend', this.handleAnimationEnd);
   }
 
   handleKeyUp(event) {
     // show nicolas cage if secret code is entered
     this.setState((prevState) => {
       let pressed = [...prevState.pressed, event.key];
-      pressed.splice(-secretCode.length - 1, pressed.length - secretCode.length);
 
-      if (pressed.join('').includes(secretCode)) {
+      // remove uncessary key presses
+      pressed.splice(-SECRET_CODE.length - 1, pressed.length - SECRET_CODE.length);
+
+      if (pressed.join('').includes(SECRET_CODE)) {
         window.Cagealicious.add();
         pressed = [];
       }
@@ -53,13 +56,15 @@ class App extends Component {
   render() {
     return (
       <Router>
-        <div
-          className="App"
-          ref={(appRef) => { this.appRef = appRef; }}
-        >
-          <Navbar />
-          <Content show={this.state.showContent} />
-        </div>
+        <ScrollToTop>
+          <div
+            className="App"
+            ref={(appElement) => { this.appElement = appElement; }}
+          >
+            <Navbar />
+            <Content show={this.state.showContent} />
+          </div>
+        </ScrollToTop>
       </Router>
     );
   }

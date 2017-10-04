@@ -1,23 +1,22 @@
+/*
+ * Base styles
+ */
+
 html {
-  height: 100%;
-  overflow: hidden;
   background-color: #04b9b7;
-  font-family: 'Raleway', sans-serif;
-  -webkit-font-smoothing: subpixel-antialiased;
-  -webkit-tap-highlight-color: rgba(0, 0, 0, 0);
 }
 
 body {
-  height: 100%;
-  overflow: auto;
+  font-family: 'Raleway', sans-serif;
+  color: white;
+  /* disable highlights on buttons, links, etc. */
+  outline: none;
+  /* disable tap highlight on mobile */
+  -webkit-tap-highlight-color: rgba(0, 0, 0, 0);
 }
 
 *,
 *::before,
 *::after {
   box-sizing: border-box;
-}
-
-#root {
-  height: 100%;
 }
