@@ -1,22 +1,30 @@
-/*
- * Base styles
- */
-
 html {
   background-color: #04b9b7;
-}
+  font-size: 1rem;
+  height: 100%; }
 
 body {
-  font-family: 'Raleway', sans-serif;
-  color: white;
-  /* disable highlights on buttons, links, etc. */
-  outline: none;
-  /* disable tap highlight on mobile */
-  -webkit-tap-highlight-color: rgba(0, 0, 0, 0);
-}
+  font-family: "Raleway", sans-serif;
+  -webkit-tap-highlight-color: transparent;
+  height: 100%; }
 
 *,
 *::before,
 *::after {
   box-sizing: border-box;
-}
+  outline: none; }
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  font-family: "Raleway", sans-serif; }
+
+#root {
+  height: 100%; }
+
+a {
+  text-decoration: none;
+  color: inherit; }

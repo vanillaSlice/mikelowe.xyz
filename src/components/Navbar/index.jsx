@@ -1,85 +1,70 @@
-import React, { Component } from 'react';
+import React from 'react';
 import { Link, NavLink } from 'react-router-dom';
 import FontAwesome from 'react-fontawesome';
+import PropTypes from '../../../node_modules/prop-types';
 
 import logoMd from './logo-md.png';
 import logoSm from './logo-sm.png';
+import cv from './cv.pdf';
 
 import './index.css';
 
-class Navbar extends Component {
-  constructor(props) {
-    super(props);
+const Navbar = props => (
+  <nav className={`Navbar ${props.collapsed ? 'collapsed' : 'expanded'}`}>
+    <div className="header">
+      <Link to="/" className="brand">
+        <img className="logo logo-sm" src={logoSm} alt="Mike Lowe" />
+        <img className="logo logo-md" src={logoMd} alt="Mike Lowe" />
+        <span className="name">
+          <span className="first">Mike</span> <span className="second">Lowe</span>
+        </span>
+      </Link>
+      <span className="job">
+        <span className="first">Software</span> <span className="second">Developer</span>
+      </span>
+      <button
+        type="button"
+        className="toggle"
+        onClick={props.onToggle}
+      >
+        <span className="sr-only">Toggle navigation</span>
+        <span className="icon-bar top" />
+        <span className="icon-bar middle" />
+        <span className="icon-bar bottom" />
+      </button>
+    </div>
+    <div className="menu">
+      <div className="nav-links">
+        <NavLink to="/about" activeClassName="active">
+          About<span className="arrow" />
+        </NavLink>
+        <NavLink to="/projects" activeClassName="active">
+          Projects<span className="arrow" />
+        </NavLink>
+        <NavLink to="/contact" activeClassName="active">
+          Contact<span className="arrow" />
+        </NavLink>
+        <a href={cv}>
+          CV<span className="arrow" />
+        </a>
+      </div>
+      <div className="social-links">
+        <a href="https://github.com/vanillaSlice">
+          <FontAwesome className="icon" name="github" tag="i" />
+          <span className="sr-only">GitHub</span>
+        </a>
+        <a href="https://codepen.io/vanillaSlice/">
+          <FontAwesome className="icon" name="codepen" tag="i" />
+          <span className="sr-only">Codepen</span>
+        </a>
+      </div>
+    </div>
+  </nav>
+);
 
-    this.state = { collapsed: true };
-
-    this.handleToggleClick = this.handleToggleClick.bind(this);
-  }
-
-  handleToggleClick() {
-    this.setState(prevState => ({ collapsed: !prevState.collapsed }));
-  }
-
-  render() {
-    return (
-      <nav className={`Navbar ${this.state.collapsed ? 'collapsed' : 'expanded'}`}>
-        <div className="header">
-          <Link to="/">
-            <img className="logo logo-sm" src={logoSm} alt="Logo" />
-            <img className="logo logo-md" src={logoMd} alt="Logo" />
-          </Link>
-          <h1 className="name">
-            <Link to="/">
-              <span className="first">Mike</span> <span className="second">Lowe</span>
-            </Link>
-          </h1>
-          <h2 className="job">
-            Software<br /><strong>Developer</strong>
-          </h2>
-          <button
-            type="button"
-            className="toggle"
-            onClick={this.handleToggleClick}
-          >
-            <span className="sr-only">Toggle navigation</span>
-            <span className="icon-bar" />
-            <span className="icon-bar" />
-            <span className="icon-bar" />
-          </button>
-        </div>
-        <div className="menu">
-          <div className="links">
-            <NavLink to="/" activeClassName="active" exact>
-              Home<span className="arrow" />
-            </NavLink>
-            <NavLink to="/about" activeClassName="active">
-              About<span className="arrow" />
-            </NavLink>
-            <NavLink to="/projects" activeClassName="active">
-              Projects<span className="arrow" />
-            </NavLink>
-            <NavLink to="/skills" activeClassName="active">
-              Skills<span className="arrow" />
-            </NavLink>
-          </div>
-          <div className="social">
-            <a href="mailto:mikelowedev@gmail.com">
-              <FontAwesome className="icon" name="envelope" tag="i" />
-              <span className="sr-only">E-mail</span>
-            </a>
-            <a href="https://github.com/vanillaSlice">
-              <FontAwesome className="icon" name="github" tag="i" />
-              <span className="sr-only">GitHub</span>
-            </a>
-            <a href="https://codepen.io/vanillaSlice/">
-              <FontAwesome className="icon" name="codepen" tag="i" />
-              <span className="sr-only">Codepen</span>
-            </a>
-          </div>
-        </div>
-      </nav>
-    );
-  }
-}
+Navbar.propTypes = {
+  collapsed: PropTypes.bool.isRequired,
+  onToggle: PropTypes.func.isRequired,
+};
 
 export default Navbar;

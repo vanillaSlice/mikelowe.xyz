@@ -1,40 +1,27 @@
-/*
- * Base styles
- */
+@keyframes fade-in {
+  0% {
+    opacity: 0; }
+  100% {
+    opacity: 1; } }
+
+@keyframes blink {
+  0% {
+    opacity: 1; }
+  50% {
+    opacity: 0; }
+  100% {
+    opacity: 1; } }
 
 .App {
   min-height: 100vh;
+  height: 100%;
   display: grid;
-  /* navbar on top, content underneath */
   grid-template: 'navbar' auto 'content' 1fr / auto;
-  animation: AppFadeIn 0.8s ease-in-out;
-}
-
-@keyframes AppFadeIn {
-  0% {
-    opacity: 0;
-  }
-
-  100% {
-    opacity: 1;
-  }
-}
-
-.App .Navbar {
-  grid-area: navbar;
-}
-
-.App .Content {
-  grid-area: content;
-}
-
-/*
- * Large device styles (992px)
- */
-
-@media (min-width: 62em) {
-  .App {
-    /* navbar left, content right */
-    grid-template: 'navbar content' auto / auto 1fr;
-  }
-}
+  animation: fade-in 0.8s ease-in-out; }
+  @media (min-width: 62em) {
+    .App {
+      grid-template: 'navbar content' auto / auto 1fr; } }
+  .App .Navbar {
+    grid-area: navbar; }
+  .App .Content {
+    grid-area: content; }

@@ -6,6 +6,7 @@ class ScrollToTop extends Component {
   componentDidUpdate(prevProps) {
     if (this.props.location !== prevProps.location) {
       window.scrollTo(0, 0);
+      this.props.onUpdate();
     }
   }
 
@@ -17,6 +18,7 @@ class ScrollToTop extends Component {
 ScrollToTop.propTypes = {
   location: PropTypes.objectOf(PropTypes.any).isRequired,
   children: PropTypes.objectOf(PropTypes.any).isRequired,
+  onUpdate: PropTypes.func.isRequired,
 };
 
 export default withRouter(ScrollToTop);

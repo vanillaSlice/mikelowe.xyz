@@ -5,8 +5,8 @@ import PropTypes from '../../../node_modules/prop-types';
 import Home from '../Home/';
 import About from '../About/';
 import Projects from '../Projects/';
-import ProjectDetail from '../Projects/ProjectDetail';
-import Skills from '../Skills/';
+import ProjectDetails from '../Projects/ProjectDetails';
+import Contact from '../Contact/';
 
 import './index.css';
 
@@ -20,13 +20,15 @@ const Content = (props) => {
 
   return (
     <div className="Content">
-      <Switch>
-        <Route path="/about" component={About} />
-        <Route path="/projects/:name" component={ProjectDetail} />
-        <Route path="/projects" component={Projects} />
-        <Route path="/skills" component={Skills} />
-        <Route path="/" component={Home} />
-      </Switch>
+      <div className="container">
+        <Switch>
+          <Route path="/about" component={About} />
+          <Route path="/projects/:name" component={ProjectDetails} />
+          <Route path="/projects" component={Projects} />
+          <Route path="/contact" component={Contact} />
+          <Route path="/" component={Home} />
+        </Switch>
+      </div>
     </div>
   );
 };

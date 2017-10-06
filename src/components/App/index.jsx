@@ -14,12 +14,15 @@ class App extends Component {
     super(props);
 
     this.state = {
-      showContent: false,
       pressed: [],
+      showContent: false,
+      navbarCollapsed: true,
     };
 
     this.handleKeyUp = this.handleKeyUp.bind(this);
     this.handleAnimationEnd = this.handleAnimationEnd.bind(this);
+    this.handleNavbarToggle = this.handleNavbarToggle.bind(this);
+    this.collapseNavbar = this.collapseNavbar.bind(this);
   }
 
   componentDidMount() {
@@ -53,15 +56,23 @@ class App extends Component {
     this.setState({ showContent: true });
   }
 
+  handleNavbarToggle() {
+    this.setState(prevState => ({ navbarCollapsed: !prevState.navbarCollapsed }));
+  }
+
+  collapseNavbar() {
+    this.setState({ navbarCollapsed: true });
+  }
+
   render() {
     return (
       <Router>
-        <ScrollToTop>
+        <ScrollToTop onUpdate={this.collapseNavbar}>
           <div
             className="App"
             ref={(appElement) => { this.appElement = appElement; }}
           >
-            <Navbar />
+            <Navbar collapsed={this.state.navbarCollapsed} onToggle={this.handleNavbarToggle} />
             <Content show={this.state.showContent} />
           </div>
         </ScrollToTop>
