@@ -1,6 +1,7 @@
 /* eslint react/no-danger:0 */
 
 import React, { Component } from 'react';
+import { Link } from 'react-router-dom';
 import FontAwesome from 'react-fontawesome';
 import PropTypes from '../../../node_modules/prop-types';
 
@@ -39,22 +40,30 @@ class ProjectDetails extends Component {
     return (
       <div className="ProjectDetails">
         <h1>{project.displayName}</h1>
-        <span className="links">
-          {
-            project.url &&
-            <span>
-              <FontAwesome className="icon" name="arrow-right" tag="i" />
-              <a href={project.url}>Live</a>
-            </span>
-          }
-          {
-            project.repo &&
-            <span>
-              <FontAwesome className="icon" name="arrow-right" tag="i" />
-              <a href={project.repo}>Repo</a>
-            </span>
-          }
-        </span>
+        <div className="links">
+          <div className="left">
+            <FontAwesome className="icon" name="arrow-left" tag="i" />
+            <Link to="/projects">
+              Back to projects
+            </Link>
+          </div>
+          <div className="right">
+            {
+              project.url &&
+              <span>
+                <FontAwesome className="icon" name="arrow-right" tag="i" />
+                <a href={project.url}>Live</a>
+              </span>
+            }
+            {
+              project.repo &&
+              <span>
+                <FontAwesome className="icon" name="arrow-right" tag="i" />
+                <a href={project.repo}>Repo</a>
+              </span>
+            }
+          </div>
+        </div>
         <img src={project.img} alt={project.displayName} />
         <h2>Description...</h2>
         <p dangerouslySetInnerHTML={{ __html: project.description }} />

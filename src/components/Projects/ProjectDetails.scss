@@ -12,18 +12,29 @@
   align-items: flex-start;
 
   .links {
-    display: block;
+    display: flex;
     width: 100%;
 
-    a {
-      margin-left: 0.5rem; // 8px
-      margin-right: 1rem; // 16px
+    .fa {
+      margin-right: 0.5rem; // 8px
+    }
+
+    .right {
+      margin-left: auto;
+
+      span {
+        margin-right: 1rem; // 16px
+        
+        &:last-child {
+          margin-right: 0;
+        }
+      }
     }
   }
 
   img {
-    margin: 1.875rem 0; // 30px
-    width: 100%;
+    margin: 1.875rem auto; // 30px
+    max-width: 100%;
   }
 
   h2 {
