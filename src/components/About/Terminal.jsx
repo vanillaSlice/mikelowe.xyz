@@ -26,12 +26,12 @@ export default () => (
       </span>
       <span className="line">
         <span className="tag">&nbsp;&nbsp;&lt;li&gt;</span>
-          CSS3 (including SCSS)
+          CSS3/SCSS
         <span className="tag">&lt;/li&gt;</span>
       </span>
       <span className="line">
         <span className="tag">&nbsp;&nbsp;&lt;li&gt;</span>
-          JavaScript (including ES6)
+          JavaScript/ES6
         <span className="tag">&lt;/li&gt;</span>
       </span>
       <span className="line">
