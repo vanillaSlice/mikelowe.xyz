@@ -5,6 +5,7 @@ import { Link } from 'react-router-dom';
 import FontAwesome from 'react-fontawesome';
 import PropTypes from '../../../node_modules/prop-types';
 
+import images from '../../images';
 import projectDetails from './projects.json';
 
 import './ProjectDetails.css';
@@ -19,7 +20,13 @@ class ProjectDetails extends Component {
   constructor(props) {
     super(props);
 
-    this.state = { project: projectDetails.projects[this.props.match.params.name] };
+    const key = this.props.match.params.name;
+    const project = projectDetails.projects[key];
+
+    this.state = {
+      key,
+      project,
+    };
   }
 
   componentWillMount() {
@@ -64,7 +71,7 @@ class ProjectDetails extends Component {
             }
           </div>
         </div>
-        <img src={project.img} alt={project.displayName} />
+        <img src={images[this.state.key]} alt={project.displayName} />
         <h2>Description...</h2>
         <p dangerouslySetInnerHTML={{ __html: project.description }} />
         <h2>Tech Used...</h2>
