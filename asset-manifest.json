@@ -1,12 +1,21 @@
 {
   "main.css": "static/css/main.1bd4e9d6.css",
   "main.css.map": "static/css/main.1bd4e9d6.css.map",
-  "main.js": "static/js/main.28f4ae38.js",
-  "main.js.map": "static/js/main.28f4ae38.js.map",
+  "main.js": "static/js/main.c0a7c439.js",
+  "main.js.map": "static/js/main.c0a7c439.js.map",
+  "static/media/blueprint-pong.png": "static/media/blueprint-pong.4fdcb9fc.png",
   "static/media/fontawesome-webfont.eot": "static/media/fontawesome-webfont.674f50d2.eot",
   "static/media/fontawesome-webfont.svg?v=4.7.0": "static/media/fontawesome-webfont.912ec66d.svg",
   "static/media/fontawesome-webfont.ttf?v=4.7.0": "static/media/fontawesome-webfont.b06871f2.ttf",
   "static/media/fontawesome-webfont.woff2?v=4.7.0": "static/media/fontawesome-webfont.af7ae505.woff2",
   "static/media/fontawesome-webfont.woff?v=4.7.0": "static/media/fontawesome-webfont.fee66e71.woff",
-  "static/media/logo.png": "static/media/logo.e16b7379.png"
+  "static/media/jumpy-block.png": "static/media/jumpy-block.ec016523.png",
+  "static/media/logo.png": "static/media/logo.e16b7379.png",
+  "static/media/matrix-digital-rain.png": "static/media/matrix-digital-rain.18553ba5.png",
+  "static/media/recipe-box.png": "static/media/recipe-box.d5f77f95.png",
+  "static/media/simon-game.png": "static/media/simon-game.7e7a9960.png",
+  "static/media/strimko.png": "static/media/strimko.f956f90c.png",
+  "static/media/twitch-status-viewer.png": "static/media/twitch-status-viewer.ddde1309.png",
+  "static/media/weather-app.png": "static/media/weather-app.0c76b7ea.png",
+  "static/media/youtube-viewer.png": "static/media/youtube-viewer.54c1beb9.png"
 }
