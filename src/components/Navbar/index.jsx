@@ -41,7 +41,7 @@ const Navbar = props => (
         <NavLink to="/contact" activeClassName="active">
           Contact<span className="arrow" />
         </NavLink>
-        <a href="/files/michael-lowe-cv.pdf">
+        <a href={`${process.env.PUBLIC_URL}/files/michael-lowe-cv.pdf`}>
           CV<span className="arrow" />
         </a>
       </div>
