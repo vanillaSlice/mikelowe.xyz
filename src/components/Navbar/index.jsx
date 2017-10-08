@@ -3,9 +3,7 @@ import { Link, NavLink } from 'react-router-dom';
 import FontAwesome from 'react-fontawesome';
 import PropTypes from '../../../node_modules/prop-types';
 
-import logoMd from './logo-md.png';
-import logoSm from './logo-sm.png';
-import cv from './cv.pdf';
+import logo from './logo.png';
 
 import './index.css';
 
@@ -13,8 +11,7 @@ const Navbar = props => (
   <nav className={`Navbar ${props.collapsed ? 'collapsed' : 'expanded'}`}>
     <div className="header">
       <Link to="/" className="brand">
-        <img className="logo logo-sm" src={logoSm} alt="Mike Lowe" />
-        <img className="logo logo-md" src={logoMd} alt="Mike Lowe" />
+        <img className="logo" src={logo} alt="Mike Lowe" />
         <span className="name">
           <span className="first">Mike</span> <span className="second">Lowe</span>
         </span>
@@ -44,7 +41,7 @@ const Navbar = props => (
         <NavLink to="/contact" activeClassName="active">
           Contact<span className="arrow" />
         </NavLink>
-        <a href={cv}>
+        <a href="/files/michael-lowe-cv.pdf">
           CV<span className="arrow" />
         </a>
       </div>

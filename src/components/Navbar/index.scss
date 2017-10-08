@@ -46,21 +46,10 @@
 
   .logo {
     border-radius: 50%;
-  }
-
-  .logo-sm {
     width: 3rem; // 48px
     margin-right: 0.75rem; // 12px
     border: 0.125rem solid transparent; // 2px
     box-shadow: 0 0 0 0.125rem $navbar-secondary-colour; // 2px
-
-    @include desktop {
-      display: none;
-    }
-  }
-
-  .logo-md {
-    display: none;
 
     @include desktop {
       margin: 2rem 0; // 32px
