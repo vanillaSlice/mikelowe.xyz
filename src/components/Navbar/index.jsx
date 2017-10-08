@@ -57,6 +57,10 @@ const Navbar = props => (
           <FontAwesome className="icon" name="codepen" tag="i" />
           <span className="sr-only">Codepen</span>
         </a>
+        <a href="https://stackoverflow.com/users/8738474/vanillaslice">
+          <FontAwesome className="icon" name="stack-overflow" tag="i" />
+          <span className="sr-only">Stack Overflow</span>
+        </a>
       </div>
     </div>
   </nav>
