@@ -12,7 +12,7 @@ const Navbar = props => (
   <nav className={`Navbar ${props.collapsed ? 'collapsed' : 'expanded'}`}>
     <div className="header">
       <Link to="/" className="brand">
-        <img className="logo" src={images.logoHalloween} alt="Mike Lowe" />
+        <img className="logo" src={images.logo} alt="Mike Lowe" />
         <span className="name">
           <span className="first">Mike</span> <span className="second">Lowe</span>
         </span>
