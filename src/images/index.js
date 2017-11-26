@@ -7,8 +7,8 @@ import matrixDigitalRain from './matrix-digital-rain.png';
 import recipeBox from './recipe-box.png';
 import simonGame from './simon-game.png';
 import strimko from './strimko.png';
+import tiny from './tiny.png';
 import twitchStatusViewer from './twitch-status-viewer.png';
-import weatherApp from './weather-app.png';
 import youtubeViewer from './youtube-viewer.png';
 
 export default {
@@ -21,7 +21,7 @@ export default {
   'recipe-box': recipeBox,
   'simon-game': simonGame,
   strimko,
+  tiny,
   'twitch-status-viewer': twitchStatusViewer,
-  'weather-app': weatherApp,
   'youtube-viewer': youtubeViewer,
 };

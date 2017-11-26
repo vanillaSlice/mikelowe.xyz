@@ -1,5 +1,14 @@
 {
   "projects": {
+    "tiny": {
+      "displayName": "Tiny",
+      "url": "https://enigmatic-spire-44057.herokuapp.com/",
+      "repo": "https://github.com/vanillaSlice/tiny",
+      "icon": "book",
+      "description": "A blog app built using Python, Flask and MongoDB. The user can read, write and comment on blog posts. Basic search functionality is also included. In the future I would like to add the ability to like and favourite posts, like and dislike comments, and add tags to posts.",
+      "tech": "Python, Flask, MongoDB, Jinja2, HTML5, CSS3 and Bootstrap.",
+      "learned": "<ul><li>How to build a Flask app.</li><li>How to handle user authentication and sessions.</li><li>How to deploy an app to Heroku.</li></ul>"
+    },
     "youtube-viewer": {
       "displayName": "YouTube Viewer",
       "url": "https://vanillaslice.github.io/YouTubeViewer/",
@@ -51,15 +60,6 @@
       "description": "A JavaFX implementation of <a href='http://www.strimko.com/play.htm'>Strimko</a>, a logic puzzle like Sudoku. The user can play and create puzzles of varying size and degrees of difficulty. Features include: hint highlighting, 'smart' solving to determine the solution to a puzzle (including its difficulty) and the pencil marks solving aid.",
       "tech": "Java, JavaFX, Guava, jUnit (for testing) and Gradle.",
       "learned": "<ul><li>How to build a JavaFX application (it's a lot nicer than Swing).</li><li>About Google's Guava libraries, these take the hassle away from carrying out a lot of common tasks in Java.</li><li>To embrace the lambda expression in Java 8.</li></ul>"
-    },
-    "weather-app": {
-      "displayName": "Weather App",
-      "url": "https://vanillaslice.github.io/WeatherApp/",
-      "repo": "https://github.com/vanillaSlice/WeatherApp",
-      "icon": "sun-o",
-      "description": "A simple weather app built using JavaScript that displays weather data for the user's current location. Weather data is pulled in using the <a href='http://simpleweatherjs.com/'>simpleWeather jQuery plugin</a> which uses Yahoo! behind the scenes. This app could be improved by allowing the user to select the location to display weather for.",
-      "tech": "HTML5, CSS3, JavaScript, jQuery and simpleWeather.js.",
-      "learned": "<ul><li>How to use the JavaScript geolocation API.</li><li>How to use the simpleWeather.js plugin to retrieve weather data.</li></ul>"
     },
     "twitch-status-viewer": {
       "displayName": "Twitch Status Viewer",
