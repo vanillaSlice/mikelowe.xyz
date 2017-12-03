@@ -74,7 +74,7 @@
       "displayName": "Blueprint Pong",
       "repo": "https://github.com/vanillaSlice/BlueprintPong",
       "icon": "gamepad",
-      "description": "A Pong clone written using libGDX with a blueprint design. The player can play against the computer at three difficulties: easy, medium and hard. Desktop and Android versions are available, I plan on creating HTML5 and iOS versions in the future.",
+      "description": "A Pong clone written using libGDX with a blueprint design. The player can play against the computer at three difficulties: <strong>easy</strong>, <strong>medium</strong> and <strong>hard</strong>. Desktop and Android versions are available.",
       "tech": "Java, libGDX and Gradle.",
       "learned": "<ul><li>How to develop a libGDX game for both desktop and Android.</li><li>About the physics/geometry of Pong.</li><li>How to create a challenging AI.</li></ul>"
     }
