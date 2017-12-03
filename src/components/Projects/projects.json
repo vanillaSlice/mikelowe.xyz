@@ -49,7 +49,7 @@
       "displayName": "Jumpy Block",
       "repo": "https://github.com/vanillaSlice/JumpyBlock",
       "icon": "gamepad",
-      "description": "A Flappy Bird clone written using libGDX with an even simpler design. Desktop and Android versions are available, I plan on creating HTML5 and iOS versions in the future. A cool feature of this clone is that it can also be played in portrait and landscape modes.",
+      "description": "A Flappy Bird clone written using libGDX with an even simpler design. Desktop and Android versions are available. A cool feature of this clone is that it can also be played in portrait and landscape modes, I don't <em>think</em> this was possible in the original game.",
       "tech": "Java, libGDX and Gradle.",
       "learned": "<ul><li>How to develop a libGDX game for both desktop and Android.</li><li>A tonne about physics, game loops and sprites.</li><li>How to use Android Studio.</li></ul>"
     },
