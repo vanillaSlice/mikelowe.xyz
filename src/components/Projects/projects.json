@@ -66,7 +66,7 @@
       "url": "https://vanillaslice.github.io/TwitchStatusViewer/",
       "repo": "https://github.com/vanillaSlice/TwitchStatusViewer",
       "icon": "twitch",
-      "description": "A viewer written in JavaScript to display the status of <a href='https://go.twitch.tv/'>Twitch</a> channels. Channel data is pulled in using the Twitch API. The user can filter channels that are online or offline, and search channels by name. The app has a set list of channels currently, I would like to be able to dynamically add channels in the future.",
+      "description": "A viewer written in JavaScript to display the status of <a href='https://go.twitch.tv/'>Twitch</a> channels. Channel data is pulled in using the Twitch API. The user can filter channels that are online or offline, and search channels by name.",
       "tech": "HTML5, CSS3, Bootstrap, JavaScript, jQuery and the Twitch API.",
       "learned": "<ul><li>How to use the Twitch API to retrieve channel data.</li></ul>"
     },
