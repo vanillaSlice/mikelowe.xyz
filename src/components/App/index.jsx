@@ -1,3 +1,5 @@
+/* eslint-disable react/no-unused-state */
+
 import React, { Component } from 'react';
 import { HashRouter as Router } from 'react-router-dom';
 
