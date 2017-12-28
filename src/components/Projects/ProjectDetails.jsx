@@ -1,9 +1,3 @@
-/*
-  eslint-disable
-    react/no-danger,
-    jsx-a11y/anchor-is-valid
-*/
-
 import React, { Component } from 'react';
 import { Link } from 'react-router-dom';
 import FontAwesome from 'react-fontawesome';
