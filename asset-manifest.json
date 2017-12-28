@@ -1,8 +1,8 @@
 {
   "main.css": "static/css/main.8d546315.css",
   "main.css.map": "static/css/main.8d546315.css.map",
-  "main.js": "static/js/main.3a0d2709.js",
-  "main.js.map": "static/js/main.3a0d2709.js.map",
+  "main.js": "static/js/main.af63c8b5.js",
+  "main.js.map": "static/js/main.af63c8b5.js.map",
   "static/media/blueprint-pong.png": "static/media/blueprint-pong.4fdcb9fc.png",
   "static/media/fontawesome-webfont.eot": "static/media/fontawesome-webfont.674f50d2.eot",
   "static/media/fontawesome-webfont.svg?v=4.7.0": "static/media/fontawesome-webfont.912ec66d.svg",
@@ -18,7 +18,7 @@
   "static/media/recipe-box.png": "static/media/recipe-box.d5f77f95.png",
   "static/media/simon-game.png": "static/media/simon-game.7e7a9960.png",
   "static/media/strimko.png": "static/media/strimko.f956f90c.png",
-  "static/media/tiny.png": "static/media/tiny.43f0957a.png",
+  "static/media/tiny.png": "static/media/tiny.f678f36a.png",
   "static/media/twitch-status-viewer.png": "static/media/twitch-status-viewer.ddde1309.png",
   "static/media/youtube-viewer.png": "static/media/youtube-viewer.54c1beb9.png"
 }
