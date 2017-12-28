@@ -4,7 +4,6 @@
   "private": true,
   "dependencies": {
     "font-awesome": "^4.7.0",
-    "gh-pages": "^1.0.0",
     "node-sass-chokidar": "^0.0.3",
     "normalize.css": "^7.0.0",
     "react": "^16.2.0",
@@ -20,7 +19,11 @@
     "eslint-plugin-import": "^2.8.0",
     "eslint-plugin-jsx-a11y": "^6.0.3",
     "eslint-plugin-react": "^7.5.1",
-    "npm-run-all": "^4.1.2"
+    "gh-pages": "^1.1.0",
+    "npm-run-all": "^4.1.2",
+    "stylelint": "^8.4.0",
+    "stylelint-config-recommended-scss": "^3.0.0",
+    "stylelint-scss": "^2.2.0"
   },
   "homepage": "https://vanillaslice.github.io",
   "scripts": {
@@ -32,7 +35,8 @@
     "start": "npm-run-all -p watch-css start-js",
     "build": "npm run build-css && react-scripts build",
     "test:lint:js": "eslint --ext=js --ext=jsx ./src",
-    "test": "run-s test:**",
+    "test:lint:css": "stylelint './src/**/*.scss'",
+    "test": "run-s build-css test:**",
     "eject": "react-scripts eject"
   }
 }
