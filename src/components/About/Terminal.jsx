@@ -21,6 +21,11 @@ export default () => (
       </span>
       <span className="line">
         <span className="tag">&nbsp;&nbsp;&lt;li&gt;</span>
+          Python
+        <span className="tag">&lt;/li&gt;</span>
+      </span>
+      <span className="line">
+        <span className="tag">&nbsp;&nbsp;&lt;li&gt;</span>
           HTML5
         <span className="tag">&lt;/li&gt;</span>
       </span>
