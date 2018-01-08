@@ -2,25 +2,25 @@
 @import '../../styles/media_query_mixins.scss';
 
 .Navbar {
-  width: 100%;
-  color: $navbar-colour;
   background-color: $navbar-background-colour;
   box-shadow: 0 0 0.625rem 0.0625rem $navbar-shadow-colour; // 10px 1px
+  color: $navbar-colour;
   position: relative;
+  width: 100%;
 
   @include desktop {
-    width: 18.75rem; // 300px
+    background-color: $navbar-background-colour;
     display: flex;
     flex-direction: column;
-    background-color: $navbar-background-colour;
+    width: 18.75rem; // 300px
   }
 
   .header {
-    padding: 0.5rem 1rem; // 8px 16px
-    width: 100%;
-    display: flex;
     align-items: center;
     background-color: $navbar-background-colour;
+    display: flex;
+    padding: 0.5rem 1rem; // 8px 16px
+    width: 100%;
 
     @include desktop {
       flex-direction: column;
@@ -30,8 +30,8 @@
   }
 
   .brand {
-    display: flex;
     align-items: center;
+    display: flex;
     transition: transform 0.1s linear;
 
     &:hover,
@@ -45,20 +45,20 @@
   }
 
   .logo {
+    border: 0.125rem solid transparent; // 2px
     border-radius: 50%;
-    width: 3rem; // 48px
+    box-shadow: 0 0 0 0.125rem $navbar-secondary-colour; // 2px
     height: 3rem; // 48px
     margin-right: 0.75rem; // 12px
-    border: 0.125rem solid transparent; // 2px
-    box-shadow: 0 0 0 0.125rem $navbar-secondary-colour; // 2px
+    width: 3rem; // 48px
 
     @include desktop {
-      margin: 2rem 0; // 32px
-      width: 8.125rem; // 130px
-      height: 8.125rem; // 130px
       border: 0.3125rem solid transparent; // 5px
       box-shadow: 0 0 0 0.3125rem $navbar-secondary-colour; // 5px
       display: inline;
+      height: 8.125rem; // 130px
+      margin: 2rem 0; // 32px
+      width: 8.125rem; // 130px
     }
   }
 
@@ -92,10 +92,10 @@
   }
 
   .toggle {
-    margin-left: auto;
     background: none;
     border: none;
     cursor: pointer;
+    margin-left: auto;
 
     &:hover,
     &:focus {
@@ -110,12 +110,12 @@
   }
 
   .icon-bar {
-    display: block;
-    width: 2rem; // 32px
-    height: 0.25rem; // 4px
     background-color: $navbar-colour;
+    display: block;
+    height: 0.25rem; // 4px
     margin: 0.25rem 0; // 4px
     transition: all 0.1s linear;
+    width: 2rem; // 32px
   }
 
   .menu {
@@ -130,12 +130,12 @@
 
   .nav-links {
     a {
-      padding: 1rem 0; // 16px
-      display: block;
-      text-transform: uppercase;
-      text-align: center;
+      display: block;      
       max-height: 3.125rem; // 50px
+      padding: 1rem 0; // 16px
       position: relative;
+      text-align: center;
+      text-transform: uppercase;
       transition: all 0.1s linear;
 
       &:hover,
@@ -156,22 +156,22 @@
     display: none;
 
     @include desktop {
-      display: inline;
-      position: absolute;
-      top: 0;
-      right: 0;
-      width: 0;
-      height: 0;
-      border-top: 1.5625rem solid $navbar-background-colour; // 25px
       border-bottom: 1.5625rem  solid $navbar-background-colour; // 25px
       border-left: 1.5625rem  solid $navbar-background-colour; // 25px
+      border-top: 1.5625rem solid $navbar-background-colour; // 25px
+      display: inline;
+      height: 0;
+      position: absolute;
+      top: 0;
       transition: all 0.1s linear;
+      right: 0;
+      width: 0;
     }
   }
 
   .social-links {
-    text-align: center;
     padding: 0.5rem 0; // 8px
+    text-align: center;
 
     a {
       &:hover,
@@ -182,9 +182,9 @@
       }
 
       .icon {
+        color: $navbar-secondary-colour;
         font-size: 2rem; // 32px
         margin: 1rem 1rem 0.5rem; // 16px 16px 8px
-        color: $navbar-secondary-colour;
         transition: transform 0.1s linear;
       }
     }

@@ -1,24 +1,24 @@
 @import '../../themes/theme.scss';
 
 .Terminal {
-  font-family: $terminal-font-family;
-  color: $terminal-colour;
   background-color: $terminal-background-colour;
-  width: 100%;
   border-radius: 0.3125rem; // 5px
   box-shadow: 0 0 1.5rem $terminal-shadow-colour; // 24px
+  color: $terminal-colour;
+  font-family: $terminal-font-family;
   padding: 1rem 1.125rem; // 16px 20px
+  width: 100%;
 
   .top-bar {
     width: 100%;
   }
 
   .button {
-    width: 0.875rem; // 14px
-    height: 0.875rem; // 14px
     border-radius: 50%;
     display: inline-block;
+    height: 0.875rem; // 14px
     margin-left: 0.5rem; // 8px
+    width: 0.875rem; // 14px
 
     &.close {
       background-color: $terminal-close-button-colour;
