@@ -1,6 +1,6 @@
 import { Component } from 'react';
 import { withRouter } from 'react-router-dom';
-import PropTypes from '../../../node_modules/prop-types';
+import PropTypes from 'prop-types';
 
 class ScrollToTop extends Component {
   componentDidUpdate(prevProps) {

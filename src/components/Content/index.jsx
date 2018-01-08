@@ -1,6 +1,6 @@
 import React from 'react';
 import { Switch, Route } from 'react-router-dom';
-import PropTypes from '../../../node_modules/prop-types';
+import PropTypes from 'prop-types';
 
 import Home from '../Home/';
 import About from '../About/';

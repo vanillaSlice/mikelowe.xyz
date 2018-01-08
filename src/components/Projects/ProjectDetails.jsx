@@ -1,7 +1,7 @@
 import React, { Component } from 'react';
 import { Link } from 'react-router-dom';
 import FontAwesome from 'react-fontawesome';
-import PropTypes from '../../../node_modules/prop-types';
+import PropTypes from 'prop-types';
 
 import images from '../../images';
 import projectDetails from './projects.json';

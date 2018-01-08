@@ -1,7 +1,7 @@
 import React from 'react';
 import { Link, NavLink } from 'react-router-dom';
 import FontAwesome from 'react-fontawesome';
-import PropTypes from '../../../node_modules/prop-types';
+import PropTypes from 'prop-types';
 
 import images from '../../images/';
 import cv from '../../files/michael-lowe-cv.pdf';
