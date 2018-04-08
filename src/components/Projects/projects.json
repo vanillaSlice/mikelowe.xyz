@@ -57,7 +57,7 @@
       "displayName": "Strimko",
       "repo": "https://github.com/vanillaSlice/Strimko",
       "icon": "puzzle-piece",
-      "description": "A JavaFX implementation of <a href='http://www.strimko.com/play.htm'>Strimko</a>, a logic puzzle like Sudoku. The user can play and create puzzles of varying size and degrees of difficulty. Features include: hint highlighting, 'smart' solving to determine the solution to a puzzle (including its difficulty) and the pencil marks solving aid.",
+      "description": "A JavaFX implementation of <a href='http://www.strimko.com'>Strimko</a>, a logic puzzle like Sudoku. The user can play and create puzzles of varying size and degrees of difficulty. Features include: hint highlighting, 'smart' solving to determine the solution to a puzzle (including its difficulty) and the pencil marks solving aid.",
       "tech": "Java, JavaFX, Guava, jUnit (for testing) and Gradle.",
       "learned": "<ul><li>How to build a JavaFX application (it's a lot nicer than Swing).</li><li>About Google's Guava libraries, these take the hassle away from carrying out a lot of common tasks in Java.</li><li>To embrace the lambda expression in Java 8.</li></ul>"
     },
