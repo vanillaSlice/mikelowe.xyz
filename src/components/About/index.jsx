@@ -18,16 +18,20 @@ const About = () => (
       This led me to study Computer Science at The University of Liverpool where
       I graduated in 2014.
     </p>
+    <h2>I previously...</h2>
+    <p>
+      Worked as a Developer for <a href="https://www.jisc.ac.uk/">Jisc</a> on
+      the <a href="https://www.jisc.ac.uk/historical-texts">Historical Texts</a> and <a href="https://www.jisc.ac.uk/journal-archives">Journal Archives</a> platforms.
+      Working here exposed me to a lot of modern technology including Elasticsearch, MongoDB and
+      AngularJS (although I&apos;m more of a React man myself).
+    </p>
     <h2>I am currently...</h2>
     <p>
-      Hacking for <a href="https://www.jisc.ac.uk/">Jisc</a> on
-      the <a href="https://www.jisc.ac.uk/historical-texts">Historical Texts</a> and <a href="https://www.jisc.ac.uk/journal-archives">Journal Archives</a> platforms.
-      Working here has exposed me to a lot of modern technology including Elasticsearch, MongoDB and
-      AngularJS (although I&apos;m more of a React man myself).
+      Developing for <a href="https://upsideenergy.co.uk/">Upside Energy</a>.
     </p>
     <h2>When not programming I&apos;m...</h2>
     <p>
-      Reading, baking, <em>meme</em>ing or making squealing sounds with a guitar.
+      Reading, baking, enjoying memes or making squealing sounds with a guitar.
     </p>
     <h2>Likes...</h2>
     <p>
