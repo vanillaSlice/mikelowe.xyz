@@ -2,7 +2,7 @@
   "projects": {
     "tiny": {
       "displayName": "Tiny",
-      "url": "https://enigmatic-spire-44057.herokuapp.com/",
+      "url": "https://slicetiny.herokuapp.com/",
       "repo": "https://github.com/vanillaSlice/tiny",
       "icon": "book",
       "description": "A blog app built using Python, Flask and MongoDB. The user can read, write and comment on blog posts. Basic search functionality is also included. In the future I would like to add the ability to like and favourite posts, like and dislike comments, and add tags to posts.",
