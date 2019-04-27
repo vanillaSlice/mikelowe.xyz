@@ -2,7 +2,7 @@
   "projects": {
     "tiny": {
       "displayName": "Tiny",
-      "url": "https://slicetiny.herokuapp.com/",
+      "url": "https://tiny.mikelowe.xyz/",
       "repo": "https://github.com/vanillaSlice/tiny",
       "icon": "book",
       "description": "A blog app built using Python, Flask and MongoDB. The user can read, write and comment on blog posts. Basic search functionality is also included. In the future I would like to add the ability to like and favourite posts, like and dislike comments, and add tags to posts.",
@@ -11,7 +11,7 @@
     },
     "youtube-viewer": {
       "displayName": "YouTube Viewer",
-      "url": "https://vanillaslice.github.io/YouTubeViewer/",
+      "url": "https://youtubeviewer.mikelowe.xyz/",
       "repo": "https://github.com/vanillaSlice/YouTubeViewer",
       "icon": "youtube-play",
       "description": "A simple YouTube viewer built using React. The user can enter a search term and get a handful of matching video results. I tried to replicate the general style of YouTube and make it responsive. I'm thinking about creating a more fully-featured clone of YouTube in the future!",
@@ -29,7 +29,7 @@
     },
     "matrix-digital-rain": {
       "displayName": "Matrix Digital Rain",
-      "url": "https://vanillaslice.github.io/MatrixDigitalRain/",
+      "url": "https://matrixdigitalrain.mikelowe.xyz/",
       "repo": "https://github.com/vanillaSlice/MatrixDigitalRain",
       "icon": "film",
       "description": "An experiment with p5.js to recreate The Matrix digital rain effect. The inspiration for this project came from a YouTube video by <a href='https://www.youtube.com/user/shiffman'>The Coding Train</a> (go and subscribe to his channel right now!). I plan on playing around with p5.js more in the future - I just need some ideas.",
