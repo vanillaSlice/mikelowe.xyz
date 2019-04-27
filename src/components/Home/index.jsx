@@ -7,7 +7,7 @@ const options = {
   strings: [
     '^2500Hi! ^125My name is <strong>Mike</strong>.&nbsp;',
     'I&apos;m a software developer based in <strong>Manchester</strong>.&nbsp;',
-    'Have a look around.&nbsp;<br />^250Check out my <a href="#/projects"><span>work</span></a>.&nbsp;<br />^250Feel free to get <a href="#contact">in touch</a>.&nbsp;<br />^500:)&nbsp;'],
+    'Have a look around.&nbsp;<br />^250Check out my <a href="./projects"><span>work</span></a>.&nbsp;<br />^250Feel free to get <a href="./contact">in touch</a>.&nbsp;<br />^500:)&nbsp;'],
   typeSpeed: 40,
   backDelay: 1000,
   backSpeed: 20,
