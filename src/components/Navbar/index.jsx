@@ -39,6 +39,9 @@ const Navbar = props => (
         <NavLink to="/projects" activeClassName="active">
           Projects<span className="arrow" />
         </NavLink>
+        <a href="https://blog.mikelowe.xyz/">
+          Blog<span className="arrow" />
+        </a>
         <NavLink to="/contact" activeClassName="active">
           Contact<span className="arrow" />
         </NavLink>
